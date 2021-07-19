@@ -35,7 +35,7 @@ const password = (isUpper, isLower, isNumber, isSpecial) => {
   const nums = "0123456789";
   const specials = "~!@#$%^&*()";
   let masterList = "";
-  //let password = "";
+  let password = "";
 
   if (isLower) masterList = lower;
   if (isUpper) masterList += upper
@@ -49,7 +49,7 @@ const password = (isUpper, isLower, isNumber, isSpecial) => {
     // use math.random() multiplier is userChoices.length
       let index = Math.floor(Math.random() * (masterList.length - 1));
     // push random character to a password
-      passwordText += masterList[index];
+      password += masterList[index];
   };
 
 };
