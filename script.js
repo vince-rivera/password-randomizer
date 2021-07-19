@@ -25,7 +25,7 @@ const checkCharTypes = () => {
   let isSpecial = checkValue("special characters");
 
   // if confirm = true then concat userChoices = userChoices.concat(another array)
-  if (isUpper || isLower || isNumber || isSpecial) generatePassword(isUpper, isLower, isNumber, isSpecial);
+  if (isUpper || isLower || isNumber || isSpecial) password(isUpper, isLower, isNumber, isSpecial);
   else alert('At least one character type must be selected');
 };
 
@@ -35,7 +35,7 @@ const password = (isUpper, isLower, isNumber, isSpecial) => {
   const nums = "0123456789";
   const specials = "~!@#$%^&*()";
   let masterList = "";
-  let password = "";
+  //let password = "";
 
   if (isLower) masterList = lower;
   if (isUpper) masterList += upper
